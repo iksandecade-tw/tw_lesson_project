@@ -12,14 +12,18 @@ class DummyUIPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const PlatformAppBar(title: Text('Dummy UI')),
+      appBar: AppBar(title: const Text('Dummy UI')),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const MenuItemWidget(
-                title: 'Next', description: 'Tab Bar, GridView, ListView'),
+            MenuItemWidget(
+              title: 'Next',
+              description: 'Tab Bar, GridView, ListView',
+              onItemTapped: () =>
+                  AutoRouter.of(context).pushNamed('/secondDummyUI'),
+            ),
             UIHelper.verticalSpace(16),
             sectionTitle('CONTAINER AND TEXT'),
             UIHelper.verticalSpace(8),
@@ -112,6 +116,7 @@ class ItemGridWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(6),

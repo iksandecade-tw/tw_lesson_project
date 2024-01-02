@@ -8,26 +8,34 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i3;
+import 'package:auto_route/auto_route.dart' as _i4;
 import 'package:trinity_lecture_app/presentation/pages/dummy_ui_page.dart'
     as _i1;
-import 'package:trinity_lecture_app/presentation/pages/splash_page.dart' as _i2;
+import 'package:trinity_lecture_app/presentation/pages/second_dummy_ui_page.dart'
+    as _i2;
+import 'package:trinity_lecture_app/presentation/pages/splash_page.dart' as _i3;
 
-abstract class $AppRouter extends _i3.RootStackRouter {
+abstract class $AppRouter extends _i4.RootStackRouter {
   $AppRouter({super.navigatorKey});
 
   @override
-  final Map<String, _i3.PageFactory> pagesMap = {
+  final Map<String, _i4.PageFactory> pagesMap = {
     DummyUIRoute.name: (routeData) {
-      return _i3.AutoRoutePage<dynamic>(
+      return _i4.AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const _i1.DummyUIPage(),
       );
     },
-    SplashRoute.name: (routeData) {
-      return _i3.AutoRoutePage<dynamic>(
+    SecondDummyUIRoute.name: (routeData) {
+      return _i4.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i2.SplashPage(),
+        child: const _i2.SecondDummyUIPage(),
+      );
+    },
+    SplashRoute.name: (routeData) {
+      return _i4.AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const _i3.SplashPage(),
       );
     },
   };
@@ -35,8 +43,8 @@ abstract class $AppRouter extends _i3.RootStackRouter {
 
 /// generated route for
 /// [_i1.DummyUIPage]
-class DummyUIRoute extends _i3.PageRouteInfo<void> {
-  const DummyUIRoute({List<_i3.PageRouteInfo>? children})
+class DummyUIRoute extends _i4.PageRouteInfo<void> {
+  const DummyUIRoute({List<_i4.PageRouteInfo>? children})
       : super(
           DummyUIRoute.name,
           initialChildren: children,
@@ -44,13 +52,27 @@ class DummyUIRoute extends _i3.PageRouteInfo<void> {
 
   static const String name = 'DummyUIRoute';
 
-  static const _i3.PageInfo<void> page = _i3.PageInfo<void>(name);
+  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i2.SplashPage]
-class SplashRoute extends _i3.PageRouteInfo<void> {
-  const SplashRoute({List<_i3.PageRouteInfo>? children})
+/// [_i2.SecondDummyUIPage]
+class SecondDummyUIRoute extends _i4.PageRouteInfo<void> {
+  const SecondDummyUIRoute({List<_i4.PageRouteInfo>? children})
+      : super(
+          SecondDummyUIRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SecondDummyUIRoute';
+
+  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
+}
+
+/// generated route for
+/// [_i3.SplashPage]
+class SplashRoute extends _i4.PageRouteInfo<void> {
+  const SplashRoute({List<_i4.PageRouteInfo>? children})
       : super(
           SplashRoute.name,
           initialChildren: children,
@@ -58,5 +80,5 @@ class SplashRoute extends _i3.PageRouteInfo<void> {
 
   static const String name = 'SplashRoute';
 
-  static const _i3.PageInfo<void> page = _i3.PageInfo<void>(name);
+  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
 }
