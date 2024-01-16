@@ -4,8 +4,8 @@ import 'package:trinity_lecture_app/presentation/widgets/molecules/platform_app_
 import 'package:trinity_lecture_app/presentation/widgets/organisms/ui_helper.dart';
 
 @RoutePage()
-class SplashPage extends StatelessWidget {
-  const SplashPage({super.key});
+class MainPage extends StatelessWidget {
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +20,12 @@ class SplashPage extends StatelessWidget {
                 onItemTapped: () =>
                     AutoRouter.of(context).pushNamed('/dummyUI')),
             UIHelper.divider(),
-            const MenuItemWidget(
+            MenuItemWidget(
               title: 'Counter Example (State Management)',
               description:
                   'Introducing of state management using flutter_bloc. Level: 1',
+              onItemTapped: () =>
+                  AutoRouter.of(context).pushNamed('/counterExampleUI'),
             ),
             UIHelper.divider(),
             const MenuItemWidget(

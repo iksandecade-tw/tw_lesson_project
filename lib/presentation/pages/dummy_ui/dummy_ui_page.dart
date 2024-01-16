@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:trinity_lecture_app/core/commons/constants.dart';
-import 'package:trinity_lecture_app/presentation/pages/splash_page.dart';
+import 'package:trinity_lecture_app/presentation/pages/main/main_page.dart';
 import 'package:trinity_lecture_app/presentation/widgets/molecules/platform_app_bar.dart';
 import 'package:trinity_lecture_app/presentation/widgets/organisms/ui_helper.dart';
 
@@ -25,14 +25,24 @@ class DummyUIPage extends StatelessWidget {
                   AutoRouter.of(context).pushNamed('/secondDummyUI'),
             ),
             UIHelper.verticalSpace(16),
-            sectionTitle('CONTAINER AND TEXT'),
+            Text(
+              'CONTAINER AND TEXT',
+              style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.green[400],
+                  fontWeight: FontWeight.bold),
+            ),
             UIHelper.verticalSpace(8),
             const ItemListWidget(
               title: 'How can I be Flutter Developer Expert',
               date: 'Jill Lepore 23 May 2023',
             ),
             UIHelper.verticalSpace(24),
-            sectionTitle('COLUMN'),
+            Text('COLUMN',
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.green[400],
+                    fontWeight: FontWeight.bold)),
             UIHelper.verticalSpace(8),
             Column(
               children: [
@@ -46,7 +56,11 @@ class DummyUIPage extends StatelessWidget {
               ],
             ),
             UIHelper.verticalSpace(24),
-            sectionTitle('ROW'),
+            Text('ROW',
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.green[400],
+                    fontWeight: FontWeight.bold)),
             UIHelper.verticalSpace(8),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +77,11 @@ class DummyUIPage extends StatelessWidget {
               ],
             ),
             UIHelper.verticalSpace(24),
-            sectionTitle('BUTTON'),
+            Text('BUTTON',
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.green[400],
+                    fontWeight: FontWeight.bold)),
             UIHelper.verticalSpace(8),
             SizedBox(
                 width: MediaQuery.of(context).size.width,
@@ -73,7 +91,11 @@ class DummyUIPage extends StatelessWidget {
                       'SUBMIT',
                     ))),
             UIHelper.verticalSpace(24),
-            sectionTitle('IMAGE ASSETS, SIZEDBOX AND EXPANDED'),
+            Text('IMAGE ASSETS, SIZEDBOX AND EXPANDED',
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.green[400],
+                    fontWeight: FontWeight.bold)),
             UIHelper.verticalSpace(8),
             Row(
               children: [
@@ -91,14 +113,6 @@ class DummyUIPage extends StatelessWidget {
           ]),
         ),
       ),
-    );
-  }
-
-  Text sectionTitle(String title) {
-    return Text(
-      title,
-      style: TextStyle(
-          fontSize: 14, color: Colors.green[400], fontWeight: FontWeight.bold),
     );
   }
 }
