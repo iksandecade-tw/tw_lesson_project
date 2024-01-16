@@ -27,10 +27,12 @@ class MainPage extends StatelessWidget {
                   AutoRouter.of(context).pushNamed('/counterExampleUI'),
             ),
             UIHelper.divider(),
-            const MenuItemWidget(
+            MenuItemWidget(
               title: 'Input Validation Example (State Management)',
               description:
                   'Flutter state management using flutter_bloc to handle validation in text field. Level: 2',
+              onItemTapped: () =>
+                  AutoRouter.of(context).pushNamed('/inputValidationUI'),
             ),
             UIHelper.divider(),
             const MenuItemWidget(
