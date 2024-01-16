@@ -2,7 +2,6 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:trinity_lecture_app/core/commons/constants.dart';
 import 'package:trinity_lecture_app/presentation/pages/main/main_page.dart';
-import 'package:trinity_lecture_app/presentation/widgets/molecules/platform_app_bar.dart';
 import 'package:trinity_lecture_app/presentation/widgets/organisms/ui_helper.dart';
 
 @RoutePage()

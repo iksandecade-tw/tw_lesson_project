@@ -1,8 +1,6 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:trinity_lecture_app/presentation/pages/dummy_ui/dummy_ui_page.dart';
-import 'package:trinity_lecture_app/presentation/widgets/molecules/platform_app_bar.dart';
 
 @RoutePage()
 class SecondDummyUIPage extends StatefulWidget {

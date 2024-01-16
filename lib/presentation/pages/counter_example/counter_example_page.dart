@@ -41,12 +41,12 @@ class _CounterExamplePageState extends State<CounterExamplePage> {
                               color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 1,
                               blurRadius: 4,
-                              offset: Offset(0, 3)),
+                              offset: const Offset(0, 3)),
                         ]),
-                    child: Icon(Icons.add),
+                    child: const Icon(Icons.add),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 GestureDetector(
@@ -64,9 +64,9 @@ class _CounterExamplePageState extends State<CounterExamplePage> {
                               color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 1,
                               blurRadius: 4,
-                              offset: Offset(0, 3)),
+                              offset: const Offset(0, 3)),
                         ]),
-                    child: Icon(Icons.remove),
+                    child: const Icon(Icons.remove),
                   ),
                 )
               ],
