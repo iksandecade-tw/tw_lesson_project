@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:trinity_lecture_app/core/commons/colors_const.dart';
-import 'package:trinity_lecture_app/presentation/widgets/organisms/news_card.dart';
 import 'package:trinity_lecture_app/presentation/widgets/organisms/text_form_field.dart';
 
 @RoutePage()

@@ -35,10 +35,12 @@ class MainPage extends StatelessWidget {
                   AutoRouter.of(context).pushNamed('/inputValidationUI'),
             ),
             UIHelper.divider(),
-            const MenuItemWidget(
+            MenuItemWidget(
               title: 'Calculator Example (State Management)',
               description:
                   'Flutter state management using flutter_bloc to calculate simple syntax. Level: 3',
+              onItemTapped: () =>
+                  AutoRouter.of(context).pushNamed('/simpleCalculatorUI'),
             ),
             UIHelper.divider(),
             const MenuItemWidget(
